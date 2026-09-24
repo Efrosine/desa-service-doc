@@ -1,0 +1,44 @@
+baseURL = 'https://example.org/'
+locale = 'en-us'
+title = 'Desa Service Docs'
+theme = 'hugo-book'
+
+
+# Book configuration
+disablePathToLower = true
+enableGitInfo = true
+
+[outputFormats]
+[outputFormats.txt]
+  mediaType = 'text/plain'
+  baseName = 'source'
+  isPlainText = true
+
+[outputs]
+  home = ['html', 'txt', 'rss']
+  page = ['html', 'txt']
+  section = ['html', 'txt']
+
+# Needed for mermaid/katex shortcodes
+[markup]
+[markup.goldmark.renderer]
+  unsafe = true
+
+[markup.tableOfContents]
+  startLevel = 1
+
+[markup.highlight]
+  style = 'base16-snazzy'
+
+[menu]
+[[menu.home]]
+  name = 'Documentation'
+  pageRef = '/docs/instalation/_index.md'
+
+[[menu.after]]
+  name = 'Github'
+  url = 'https://github.com/efrosine/'
+
+[params]
+  BookToC = true
+  BookBreadcrumbs = true
