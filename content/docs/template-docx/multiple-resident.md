@@ -68,7 +68,7 @@ menghasilkan:
 | 2 | `resident_2` | 27 |
 | 3 | `resident_3` | 31 |
 
-Karena itu, `${resident_1.name} selalu merujuk pada resident pertama dalam permintaan.
+Karena itu, `${resident_1.name}` selalu merujuk pada resident pertama dalam permintaan.
 
 ## Hubungan Resident dan Family
 
