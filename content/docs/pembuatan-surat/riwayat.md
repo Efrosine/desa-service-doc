@@ -11,7 +11,7 @@ Letter Request dipertahankan sebagai riwayat. Data request tidak ikut dihapus ke
 
 Request tetap tersedia.
 
-Relasi \`letter_type_id\` menjadi \`NULL\`, sehingga daftar riwayat menampilkan:
+Relasi `letter_type_id` menjadi `NULL`, sehingga daftar riwayat menampilkan:
 
 > **Jenis surat tidak tersedia**
 
@@ -21,7 +21,7 @@ Informasi jenis surat yang dibutuhkan untuk membaca riwayat tetap berasal dari s
 
 Request juga tetap tersedia.
 
-Relasi \`letter_template_id\` menjadi \`NULL\`, sehingga daftar riwayat menampilkan:
+Relasi `letter_template_id` menjadi `NULL`, sehingga daftar riwayat menampilkan:
 
 > **Template tidak tersedia**
 
@@ -39,7 +39,7 @@ Dengan demikian, riwayat request bergantung pada data snapshot untuk konteks his
 
 ## Prinsip
 
-\`\`\`text
+```text
 Master saat ini
     ↓
 Letter Request dibuat
@@ -49,4 +49,4 @@ Snapshot disimpan
 Master boleh berubah / dihapus
     ↓
 Riwayat request tetap dapat dibaca
-\`\`\`
+```
