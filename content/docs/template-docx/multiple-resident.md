@@ -23,6 +23,8 @@ Jumlah resident ditentukan oleh `additional_residents` pada jenis surat:
 
 Nilai tersebut berarti satu resident utama ditambah dua resident tambahan, sehingga permintaan membutuhkan tiga resident.
 
+> **Warning:** Sistem saat ini membatasi jumlah resident tambahan hingga **4 resident**. Dengan satu resident utama, jumlah maksimum dalam satu permintaan adalah **5 resident**, yaitu `resident_1` sampai `resident_5`.
+
 ## Cara Kerja
 
 Alur data multiple resident:
@@ -68,7 +70,7 @@ menghasilkan:
 | 2 | `resident_2` | 27 |
 | 3 | `resident_3` | 31 |
 
-Karena itu, `${resident_1.name}` selalu merujuk pada resident pertama dalam permintaan.
+Karena itu, `\${resident_1.name}` selalu merujuk pada resident pertama dalam permintaan.
 
 ## Hubungan Resident dan Family
 
