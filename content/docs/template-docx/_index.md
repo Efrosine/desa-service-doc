@@ -8,4 +8,3 @@ weight: 50
 - [Placeholder Resident dan Family](placeholder-master-data/)
 - [Dynamic Placeholder](dynamic-placeholder/)
 - [Multiple Resident](multiple-resident/)
-- [List dan Block](list-block/)
