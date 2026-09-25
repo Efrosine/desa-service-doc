@@ -5,6 +5,8 @@ weight: 16
 
 # Operasional dan Update
 
+Halaman ini menjelaskan operasi dasar deployment setelah instalasi awal selesai.
+
 ## Restart PC
 
 Restart PC tidak memerlukan instalasi ulang. Docker menggunakan:
@@ -19,7 +21,9 @@ Setelah Docker Desktop kembali berjalan, cek:
 docker compose ps
 ```
 
-## Stop dan start
+Pastikan web dan queue container kembali berstatus `Up`.
+
+## Stop dan Start
 
 Untuk menghentikan sementara:
 
@@ -35,7 +39,7 @@ docker compose start
 
 `docker compose down` menghapus container dan network Compose. Bind mount seperti `storage/` dan `database/database.sqlite` tetap berada di host, tetapi gunakan perintah ini hanya jika memang ingin membuat ulang container.
 
-## Update image
+## Update Image
 
 Sebelum update:
 
@@ -58,7 +62,9 @@ Jika release membutuhkan migration:
 docker exec -it laravel-sistem-desa php artisan migrate --force
 ```
 
-## Jika update bermasalah
+Setelah update, lakukan [Verifikasi Instalasi](../verifikasi/) untuk memastikan web dan queue container berjalan normal.
+
+## Jika Update Bermasalah
 
 Jangan menghapus database atau storage untuk mencoba memperbaiki deployment.
 
@@ -69,9 +75,19 @@ docker logs laravel-sistem-desa
 docker logs laravel-sistem-desa-queue
 ```
 
-Kemudian gunakan image release sebelumnya yang sudah diketahui bekerja dan jalankan kembali Compose. Jika migration database sudah dijalankan oleh release baru, rollback migration harus mengikuti prosedur release aplikasi tersebut.
+Periksa versi image yang digunakan dan pastikan image tersebut memang release yang dimaksud.
 
-## Backup minimum
+Jika perlu kembali ke release sebelumnya, ubah tag image pada `docker-compose.yml` ke versi yang sebelumnya diketahui bekerja, lalu jalankan:
+
+```bash
+docker compose pull
+docker compose up -d
+docker compose ps
+```
+
+Jika migration database sudah dijalankan oleh release baru, jangan melakukan rollback database secara sembarangan. Rollback migration harus mengikuti prosedur release aplikasi tersebut.
+
+## Backup Minimum
 
 Simpan:
 
