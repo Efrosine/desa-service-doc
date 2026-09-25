@@ -1,9 +1,9 @@
 ---
-title: "Placeholder Resident dan Family"
+title: "System Placeholder"
 weight: 51
 ---
 
-# Placeholder Resident dan Family
+# System Placeholder
 
 Gunakan placeholder berikut di template DOCX.
 

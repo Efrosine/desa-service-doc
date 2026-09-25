@@ -2,9 +2,9 @@
 layout: landing
 ---
 
-{{< image src="light.png" >}}
 
 # Desa Service
+{{< image src="landingpage.png" >}}
 
 **Sistem administrasi desa untuk mengelola data penduduk dan membuat surat secara terstruktur.**
 

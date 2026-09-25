@@ -33,12 +33,13 @@ enableGitInfo = true
 [menu]
 [[menu.home]]
   name = 'Documentation'
-  pageRef = '/docs/instalation/_index.md'
+  pageRef = '/docs/overview.md'
 
 [[menu.after]]
   name = 'Github'
   url = 'https://github.com/efrosine/'
 
 [params]
+  BookTheme = 'ayu-dark'
   BookToC = true
   BookBreadcrumbs = true
