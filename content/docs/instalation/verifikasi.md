@@ -18,7 +18,7 @@ Expected result:
 - `laravel-sistem-desa` berstatus `Up`.
 - `laravel-sistem-desa-queue` berstatus `Up`.
 
-Jika salah satu container tidak `Up`, lanjutkan ke [Troubleshooting Container](../troubleshooting/container-real/).
+Jika salah satu container tidak `Up`, lanjutkan ke [Troubleshooting Container](../troubleshooting/container/).
 
 ## 2. Cek worker
 
