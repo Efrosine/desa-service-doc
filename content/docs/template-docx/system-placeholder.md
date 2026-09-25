@@ -3,12 +3,6 @@ title: "System Placeholder"
 weight: 51
 ---
 
----
-
-title: "System Placeholder"
-weight: 51
-----------
-
 # System Placeholder
 
 Placeholder berikut disediakan otomatis oleh **LetterGenerator** ketika template DOCX diproses.

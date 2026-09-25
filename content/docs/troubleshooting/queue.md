@@ -9,7 +9,7 @@ Import Data Penduduk diproses secara asynchronous melalui database queue.
 
 Alur singkat:
 
-`text
+```text
 Upload CSV
     ↓
 PopulationImport
@@ -23,34 +23,34 @@ PopulationImportService
 Validasi CSV
     ↓
 Commit ke master data
-`
+```
 
 ## Memeriksa Queue
 
 Pastikan konfigurasi berikut digunakan:
 
-`env
+```env
 QUEUE_CONNECTION=database
-`
+```
 
 Worker yang digunakan pada deployment saat ini:
 
-`bash
+```bash
 php artisan queue:work database --sleep=3 --tries=3 --timeout=300
-`
+```
 
 Untuk Docker:
 
-`bash
+```bash
 docker compose ps
 docker logs laravel-sistem-desa-queue
-`
+```
 
 Jika worker berhenti, restart dengan:
 
-`bash
+```bash
 docker compose restart queue
-`
+```
 
 ## Import `pending` Terlalu Lama
 
@@ -119,7 +119,7 @@ Jangan hanya menghapus row yang error tanpa memahami penyebabnya. Error lintas-r
 
 ## Ringkasan Diagnosis
 
-`text
+```text
 Import pending
     → cek queue worker
 
@@ -131,4 +131,4 @@ Import failed + error validasi
 
 Import failed + exception
     → cek Detail Hasil Import + log worker
-`
+```

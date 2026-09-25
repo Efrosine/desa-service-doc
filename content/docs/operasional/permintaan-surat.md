@@ -1,6 +1,6 @@
 ---
 title: "Permintaan Surat"
-weight: 28
+weight: 29
 ---
 
 # Permintaan Surat
@@ -37,6 +37,11 @@ Saat mengedit permintaan, sistem kembali memvalidasi resident dan template, meny
 | `created_by` | ✗ | ID user yang membuat permintaan |
 | `created_at` | ✗ | Waktu data dibuat |
 | `updated_at` | ✗ | Waktu data terakhir diperbarui |
+
+> **Keterangan:**
+> - ✓ = field dapat bernilai `NULL`.
+> - ✗ = field tidak dapat bernilai `NULL`.
+> - S = field dikelola oleh system dan diisi secara otomatis.
 
 ## Struktur JSON
 
@@ -118,7 +123,3 @@ Contoh:
 
 Saat edit, sistem mengambil nama field dari `form_schema` dan hanya mempertahankan field tersebut di `form_data`.
 
-> **Keterangan:**
-> - ✓ = field dapat bernilai `NULL`.
-> - ✗ = field tidak dapat bernilai `NULL`.
-> - S = field dikelola oleh system dan diisi secara otomatis.

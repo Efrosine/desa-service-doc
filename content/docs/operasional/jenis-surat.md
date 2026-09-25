@@ -1,6 +1,6 @@
 ---
 title: "Jenis Surat"
-weight: 26
+weight: 27
 ---
 
 # Jenis Surat
@@ -46,6 +46,11 @@ Jenis surat digunakan untuk:
 | `is_active` | ✗ | Menentukan apakah jenis surat dapat digunakan |
 | `created_at` | ✗ | Waktu data dibuat |
 | `updated_at` | ✗ | Waktu data terakhir diperbarui |
+
+> **Keterangan:**
+> - ✓ = field dapat bernilai `NULL`.
+> - ✗ = field tidak dapat bernilai `NULL`.
+> - S = field dikelola oleh system dan diisi secara otomatis.
 
 ## Konfigurasi Resident
 
@@ -135,8 +140,3 @@ Jenis surat menyediakan aturan dasar, sedangkan template menentukan struktur dok
 - Resident tambahan mengikuti urutan resident dalam permintaan.
 - `data_sources` menggunakan array JSON.
 - Satu jenis surat dapat memiliki beberapa template dan hanya satu template yang aktif pada satu waktu.
-
-> **Keterangan:**
-> - ✓ = field dapat bernilai `NULL`.
-> - ✗ = field tidak dapat bernilai `NULL`.
-> - S = field dikelola oleh system dan diisi secara otomatis.

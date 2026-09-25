@@ -1,6 +1,6 @@
 ---
 title: "Template Surat"
-weight: 27
+weight: 28
 ---
 
 # Template Surat
@@ -45,6 +45,11 @@ Template digunakan untuk:
 | `is_active` | ✗ | Menentukan apakah template aktif |
 | `created_at` | ✗ | Waktu data dibuat |
 | `updated_at` | ✗ | Waktu data terakhir diperbarui |
+
+> **Keterangan:**
+> - ✓ = field dapat bernilai `NULL`.
+> - ✗ = field tidak dapat bernilai `NULL`.
+> - S = field dikelola oleh system dan diisi secara otomatis.
 
 ## Versioning
 
@@ -215,8 +220,3 @@ Generated Document
 ```
 
 Dengan demikian, **Jenis Surat menentukan surat apa yang tersedia**, sedangkan **Template Surat menentukan dokumen dan form apa yang digunakan untuk menghasilkan surat tersebut**.
-
-> **Keterangan:**
-> - ✓ = field dapat bernilai `NULL`.
-> - ✗ = field tidak dapat bernilai `NULL`.
-> - S = field dikelola oleh system dan diisi secara otomatis.
