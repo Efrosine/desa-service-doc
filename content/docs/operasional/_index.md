@@ -8,4 +8,5 @@ weight: 20
 - [Dashboard](dashboard/)
 - [Keluarga](keluarga/)
 - [Warga](warga/)
+- [Institusi](institusi/)
 - [Import data penduduk](import-penduduk/)
