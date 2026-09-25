@@ -5,10 +5,23 @@ weight: 13
 
 # Pull Image dan Docker Compose
 
-Image production: `efrosine/desa-service:latest`.
+## Image
+
+Untuk instalasi production, gunakan image release yang sesuai dengan versi aplikasi.
+
+Contoh:
+
+```text
+efrosine/desa-service:v1.0.0
+```
+
+Jika deployment Anda memang menggunakan `latest`, dokumentasikan versi image yang sedang terpasang sebelum melakukan update.
+
+## Compose
 
 Gunakan Compose berikut:
-~~~yaml
+
+```yaml
 services:
     aplikasi-desa:
         image: efrosine/desa-service:latest
@@ -31,15 +44,33 @@ services:
             - ./database/database.sqlite:/var/www/html/database/database.sqlite
             - ./.env:/var/www/html/.env
         restart: unless-stopped
-~~~
+```
 
 Pull dan start:
-~~~bash
+
+```bash
 docker compose pull
 docker compose up -d
 docker compose ps
-~~~
+```
 
-Container `laravel-sistem-desa` adalah web app. `laravel-sistem-desa-queue` adalah worker. Keduanya harus `Up`.
+Container `laravel-sistem-desa` adalah web app. Container `laravel-sistem-desa-queue` adalah worker.
 
 **Jangan `docker compose build` pada instalasi production.**
+
+## Jika container tidak Up
+
+Jangan langsung menjalankan ulang seluruh instalasi. Cari penyebabnya:
+
+```bash
+docker compose ps
+docker logs laravel-sistem-desa
+docker logs laravel-sistem-desa-queue
+```
+
+Gunakan error terakhir pada log untuk menentukan langkah perbaikan. Setelah perubahan dilakukan, jalankan:
+
+```bash
+docker compose up -d
+docker compose ps
+```
