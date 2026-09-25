@@ -13,12 +13,15 @@ Data institusi yang tersimpan dapat digunakan oleh jenis surat yang membutuhkan 
 
 | Nama field | Nullable | Deskripsi |
 | --- | :---: | --- |
-| `id` |  | ID unik institusi |
-| `name` |  | Nama institusi |
+| `id` | S | ID unik institusi |
+| `name` | ✗ | Nama institusi |
 | `npsn` | ✓ | Nomor Pokok Sekolah Nasional (NPSN) |
 | `npwp` | ✓ | Nomor Pokok Wajib Pajak (NPWP) |
 | `address` | ✓ | Alamat institusi |
-| `created_at` |  | Waktu data dibuat |
-| `updated_at` |  | Waktu data terakhir diperbarui |
+| `created_at` | ✗ | Waktu data dibuat |
+| `updated_at` | ✗ | Waktu data terakhir diperbarui |
 
-> **Nullable:** kolom bertanda ✓ dapat bernilai `NULL`.
+> **Keterangan:**
+> - ✓ = field dapat bernilai `NULL`.
+> - ✗ = field tidak dapat bernilai `NULL`.
+> - S = field dikelola oleh system dan diisi secara otomatis.

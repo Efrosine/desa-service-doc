@@ -15,10 +15,10 @@ Saat membuat request, sistem memvalidasi jumlah resident, keunikan resident, dan
 
 | Nama field | Nullable | Deskripsi |
 | --- | :---: | --- |
-| `id` |  | ID unik resident |
-| `family_id` |  | ID keluarga yang menaungi resident |
-| `nik` |  | Nomor Induk Kependudukan (NIK) |
-| `name` |  | Nama lengkap resident |
+| `id` | S | ID unik resident |
+| `family_id` | ✗ | ID keluarga yang menaungi resident |
+| `nik` | ✗ | Nomor Induk Kependudukan (NIK) |
+| `name` | ✗ | Nama lengkap resident |
 | `relationship` | ✓ | Hubungan resident dengan keluarga |
 | `birth_place` | ✓ | Tempat lahir |
 | `birth_date` | ✓ | Tanggal lahir |
@@ -27,7 +27,10 @@ Saat membuat request, sistem memvalidasi jumlah resident, keunikan resident, dan
 | `marital_status` | ✓ | Status perkawinan |
 | `occupation` | ✓ | Pekerjaan |
 | `education` | ✓ | Pendidikan |
-| `created_at` |  | Waktu data dibuat |
-| `updated_at` |  | Waktu data terakhir diperbarui |
+| `created_at` | ✗ | Waktu data dibuat |
+| `updated_at` | ✗ | Waktu data terakhir diperbarui |
 
-> **Nullable:** kolom bertanda ✓ dapat bernilai `NULL`.
+> **Keterangan:**
+> - ✓ = field dapat bernilai `NULL`.
+> - ✗ = field tidak dapat bernilai `NULL`.
+> - S = field dikelola oleh system dan diisi secara otomatis.

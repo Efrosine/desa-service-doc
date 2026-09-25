@@ -15,8 +15,8 @@ Nomor KK dipakai sebagai identitas keluarga dalam proses surat. Jumlah anggota b
 
 | Nama field | Nullable | Deskripsi |
 | --- | :---: | --- |
-| `id` |  | ID unik keluarga |
-| `kk_number` |  | Nomor Kartu Keluarga (KK) |
+| `id` | S | ID unik keluarga |
+| `kk_number` | ✗ | Nomor Kartu Keluarga (KK) |
 | `head_resident_id` | ✓ | ID resident yang menjadi kepala keluarga |
 | `address` | ✓ | Alamat keluarga |
 | `rt` | ✓ | Nomor Rukun Tetangga (RT) |
@@ -27,7 +27,10 @@ Nomor KK dipakai sebagai identitas keluarga dalam proses surat. Jumlah anggota b
 | `district` | ✓ | Kecamatan |
 | `regency` | ✓ | Kabupaten atau kota |
 | `province` | ✓ | Provinsi |
-| `created_at` |  | Waktu data dibuat |
-| `updated_at` |  | Waktu data terakhir diperbarui |
+| `created_at` | ✗ | Waktu data dibuat |
+| `updated_at` | ✗ | Waktu data terakhir diperbarui |
 
-> **Nullable:** kolom bertanda ✓ dapat bernilai `NULL`.
+> **Keterangan:**
+> - ✓ = field dapat bernilai `NULL`.
+> - ✗ = field tidak dapat bernilai `NULL`.
+> - S = field dikelola oleh system dan diisi secara otomatis.
