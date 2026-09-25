@@ -123,3 +123,17 @@ Contoh:
 
 Saat edit, sistem mengambil nama field dari `form_schema` dan hanya mempertahankan field tersebut di `form_data`.
 
+
+## Tampilan
+
+Daftar permintaan surat:
+
+{{< image src="letter-request-list.png" >}}
+
+Form permintaan surat:
+
+{{< image src="letter-request-form.png" >}}
+
+Detail permintaan surat:
+
+{{< image src="letter-request-view.png" >}}

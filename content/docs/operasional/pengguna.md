@@ -26,3 +26,17 @@ Pengguna memiliki nama, email, dan password. Password disimpan dalam bentuk hash
 > - ✓ = field dapat bernilai `NULL`.
 > - ✗ = field tidak dapat bernilai `NULL`.
 > - S = field dikelola oleh system dan diisi secara otomatis.
+
+## Tampilan
+
+Daftar pengguna:
+
+{{< image src="user-list.png" >}}
+
+Form tambah atau ubah pengguna:
+
+{{< image src="user-form.png" >}}
+
+Detail pengguna:
+
+{{< image src="user-view.png" >}}

@@ -140,3 +140,17 @@ Jenis surat menyediakan aturan dasar, sedangkan template menentukan struktur dok
 - Resident tambahan mengikuti urutan resident dalam permintaan.
 - `data_sources` menggunakan array JSON.
 - Satu jenis surat dapat memiliki beberapa template dan hanya satu template yang aktif pada satu waktu.
+## Tampilan
+
+Daftar jenis surat:
+
+{{< image src="letter-type-list.png" >}}
+
+Form tambah atau ubah jenis surat:
+
+{{< image src="letter-type-form.png" >}}
+
+Detail jenis surat:
+
+{{< image src="letter-type-view.png" >}}
+

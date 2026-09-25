@@ -25,3 +25,14 @@ Data institusi yang tersimpan dapat digunakan oleh jenis surat yang membutuhkan 
 > - ✓ = field dapat bernilai `NULL`.
 > - ✗ = field tidak dapat bernilai `NULL`.
 > - S = field dikelola oleh system dan diisi secara otomatis.
+
+## Tampilan
+
+Daftar dan detail institusi:
+
+{{< image src="institution-list.png" >}}
+
+Form institusi:
+
+{{< image src="institution-form.png" >}}
+

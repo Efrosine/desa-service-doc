@@ -34,3 +34,17 @@ Saat membuat request, sistem memvalidasi jumlah resident, keunikan resident, dan
 > - ✓ = field dapat bernilai `NULL`.
 > - ✗ = field tidak dapat bernilai `NULL`.
 > - S = field dikelola oleh system dan diisi secara otomatis.
+
+## Tampilan
+
+Daftar warga:
+
+{{< image src="resident-list.png" >}}
+
+Form tambah atau ubah warga:
+
+{{< image src="resident-form.png" >}}
+
+Detail warga:
+
+{{< image src="resident-view.png" >}}

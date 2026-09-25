@@ -220,3 +220,13 @@ Generated Document
 ```
 
 Dengan demikian, **Jenis Surat menentukan surat apa yang tersedia**, sedangkan **Template Surat menentukan dokumen dan form apa yang digunakan untuk menghasilkan surat tersebut**.
+
+## Tampilan
+
+Template Surat dikelola melalui relasi pada halaman Jenis Surat:
+
+{{< image src="letter-template-list.png" >}}
+
+Form template surat:
+
+{{< image src="letter-template-form.png" >}}

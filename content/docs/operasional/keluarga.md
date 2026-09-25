@@ -34,3 +34,21 @@ Nomor KK dipakai sebagai identitas keluarga dalam proses surat. Jumlah anggota b
 > - ✓ = field dapat bernilai `NULL`.
 > - ✗ = field tidak dapat bernilai `NULL`.
 > - S = field dikelola oleh system dan diisi secara otomatis.
+
+## Tampilan
+
+Daftar keluarga:
+
+{{< image src="family-list.png" >}}
+
+Form tambah atau ubah keluarga:
+
+{{< image src="family-form.png" >}}
+
+Detail keluarga dan anggota warga:
+
+{{< image src="family-view.png" >}}
+
+Daftar warga pada keluarga:
+
+{{< image src="family-residents.png" >}}
