@@ -5,19 +5,41 @@ weight: 15
 
 # Verifikasi Instalasi
 
-Cek container:
-~~~bash
+Lakukan verifikasi sebelum aplikasi dianggap siap digunakan.
+
+## 1. Cek container
+
+```bash
 docker compose ps
-~~~
+```
 
-Cek worker:
-~~~bash
+Expected result:
+
+- `laravel-sistem-desa` berstatus `Up`.
+- `laravel-sistem-desa-queue` berstatus `Up`.
+
+Jika salah satu container tidak `Up`, lanjutkan ke [Troubleshooting Container](../troubleshooting/container-real/).
+
+## 2. Cek worker
+
+```bash
 docker logs laravel-sistem-desa-queue
-~~~
+```
 
-Buka aplikasi:
-~~~text
+Log tidak harus berisi pesan tertentu ketika worker sedang idle. Yang penting container tetap berjalan dan tidak terus-menerus restart.
+
+## 3. Buka aplikasi
+
+```text
 http://localhost:8000/admin
-~~~
+```
 
-Checklist: web container Up, queue container Up, APP_KEY terisi, migration berhasil, akun admin tersedia, dan panel `/admin` dapat dibuka.
+## Checklist
+
+- [ ] Web container `Up`
+- [ ] Queue container `Up`
+- [ ] `APP_KEY` terisi
+- [ ] Migration berhasil
+- [ ] Storage link tersedia
+- [ ] Akun admin tersedia
+- [ ] Panel `/admin` dapat dibuka
