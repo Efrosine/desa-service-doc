@@ -1,6 +1,6 @@
 ---
 title: "Import Data Penduduk"
-weight: 24
+weight: 29
 ---
 
 # Import Data Penduduk
