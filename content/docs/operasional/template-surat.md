@@ -9,6 +9,8 @@ Template Surat menentukan **bagaimana dokumen untuk suatu jenis surat dibuat**.
 
 Template dikelola dari halaman **Jenis Surat** melalui relasi **Template Surat**. Satu jenis surat dapat memiliki beberapa template untuk mendukung versioning tanpa mengubah definisi jenis surat.
 
+{{< image src="letter-template-list.png" >}}
+
 Secara konseptual:
 
 ```text
@@ -102,6 +104,8 @@ Detail placeholder dijelaskan pada [Panduan Template DOCX](../template-docx/).
 ## Dynamic Form
 
 `form_schema` mendefinisikan field tambahan yang ditampilkan kepada operator ketika membuat atau mengedit permintaan surat.
+
+{{< image src="letter-template-form.png" >}}
 
 Contoh:
 
@@ -220,13 +224,3 @@ Generated Document
 ```
 
 Dengan demikian, **Jenis Surat menentukan surat apa yang tersedia**, sedangkan **Template Surat menentukan dokumen dan form apa yang digunakan untuk menghasilkan surat tersebut**.
-
-## Tampilan
-
-Template Surat dikelola melalui relasi pada halaman Jenis Surat:
-
-{{< image src="letter-template-list.png" >}}
-
-Form template surat:
-
-{{< image src="letter-template-form.png" >}}

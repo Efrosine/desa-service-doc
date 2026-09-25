@@ -7,6 +7,8 @@ weight: 29
 
 Menu **Permohonan Surat** menyimpan permintaan pembuatan surat berdasarkan jenis surat dan template yang aktif.
 
+{{< image src="letter-request-list.png" >}}
+
 Saat membuat permintaan, sistem:
 
 1. Memilih template aktif berdasarkan jenis surat.
@@ -16,6 +18,10 @@ Saat membuat permintaan, sistem:
 5. Menyimpan snapshot data resident, family, dan institution jika sumber data tersebut digunakan.
 6. Menyimpan data form tambahan dari template.
 7. Menyimpan pengguna yang membuat permintaan.
+
+Form permintaan surat:
+
+{{< image src="letter-request-form.png" >}}
 
 Saat mengedit permintaan, sistem kembali memvalidasi resident dan template, menyaring `form_data` berdasarkan `form_schema`, memperbarui snapshot, lalu menghasilkan ulang dokumen.
 
@@ -112,8 +118,6 @@ Jika jenis surat tidak menggunakan institution, nilai snapshot tidak diisi.
 
 `form_data` berisi nilai field dinamis yang didefinisikan oleh `form_schema` pada template.
 
-Contoh:
-
 ```json
 {
   "keperluan": "Pengajuan administrasi",
@@ -122,17 +126,6 @@ Contoh:
 ```
 
 Saat edit, sistem mengambil nama field dari `form_schema` dan hanya mempertahankan field tersebut di `form_data`.
-
-
-## Tampilan
-
-Daftar permintaan surat:
-
-{{< image src="letter-request-list.png" >}}
-
-Form permintaan surat:
-
-{{< image src="letter-request-form.png" >}}
 
 Detail permintaan surat:
 
