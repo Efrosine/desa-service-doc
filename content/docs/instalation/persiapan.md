@@ -5,9 +5,21 @@ weight: 11
 
 # Persiapan PC
 
-Prasyarat: Docker Desktop, koneksi internet saat instalasi/update, PowerShell atau Command Prompt, dan ruang penyimpanan.
+Sebelum melakukan instalasi, siapkan PC desa dan pastikan kebutuhan berikut tersedia.
 
-Contoh folder:
+## Persyaratan
+
+- **Docker Desktop** sudah terpasang dan dapat menjalankan container.
+- **Koneksi internet** untuk mengunduh image Docker dan melakukan instalasi atau update.
+- **PowerShell** atau **Command Prompt** untuk menjalankan perintah Docker.
+- **Ruang penyimpanan** yang cukup untuk image Docker, database, storage aplikasi, dan file pendukung lainnya.
+
+## Struktur Folder
+
+Gunakan satu folder khusus untuk menyimpan file deployment aplikasi.
+
+Contoh:
+
 ~~~text
 E:\desa-service
 ├── storage\
@@ -17,6 +29,20 @@ E:\desa-service
 └── .env
 ~~~
 
-Buat `database.sqlite` sebagai file kosong. Pastikan bukan `database.sqlite.txt`.
+Pastikan file database dibuat sebagai file kosong dengan nama:
 
-Bind mount membuat database dan storage tetap berada di PC desa: `database/database.sqlite`, `storage/`, dan `.env`.
+`database/database.sqlite`
+
+Perhatikan ekstensi file. File harus bernama `database.sqlite`, bukan `database.sqlite.txt`.
+
+## Data yang Dipertahankan
+
+Deployment menggunakan bind mount agar beberapa data tetap berada di PC desa dan tidak hilang ketika container dibuat ulang.
+
+Data yang dipertahankan:
+
+- `database/database.sqlite` untuk database aplikasi.
+- `storage/` untuk file dan data aplikasi.
+- `.env` untuk konfigurasi environment.
+
+Struktur folder dan file tersebut perlu disiapkan sebelum menjalankan Docker Compose.

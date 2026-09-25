@@ -1,32 +1,25 @@
 ---
-title: "Docs"
+title: "Desa Service"
 weight: 1
 layout: single
-params:
-  # bookFlatSection: false
-  # bookToc: true
-  # bookBreadcrumbs: false
-  # bookPageLinks: false
-  # bookHidden: false
-  # bookCollapseSection: false
-  # bookComments: false
-  # bookSearchExclude: false
-  # bookHref: ''
-  # bookIcon: ''
 ---
 
 # Desa Service
 
-Dokumentasi lengkap penggunaan Desa Service, mulai dari instalasi production-ready dengan Docker sampai operasional surat.
+Dokumentasi penggunaan dan operasional Desa Service, mulai dari instalasi production dengan Docker sampai pengelolaan penduduk dan pembuatan surat.
 
 ## Jalur dokumentasi
 
-1. Instalasi Docker dan image production
-2. Inisialisasi Laravel dan database
-3. Operasional data penduduk
+1. [Overview](overview/)
+2. [Instalasi](instalation/)
+3. [Operasional](operasional/)
 4. Master jenis surat dan template
 5. Pembuatan dan generate surat
-6. Placeholder DOCX
-7. Troubleshooting
+6. [Template DOCX](template-docx/)
+7. [Troubleshooting](troubleshooting/)
 
-Dokumentasi ini mengikuti implementasi branch `dev` yang menjadi basis deployment aplikasi.
+## Tentang versi dokumentasi
+
+Dokumentasi deployment mengikuti implementasi aplikasi pada branch `dev`. Untuk instalasi production, gunakan image release yang sesuai dengan versi aplikasi yang sedang dipasang.
+
+Jika dokumentasi dan perilaku aplikasi berbeda, verifikasi versi image yang digunakan sebelum mengikuti langkah migrasi atau konfigurasi.

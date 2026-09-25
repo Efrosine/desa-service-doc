@@ -5,10 +5,18 @@ weight: 10
 
 # Instalasi
 
-Production menggunakan Docker image `efrosine/desa-service:latest`. PC desa tidak perlu build source code.
+Production menggunakan Docker. PC desa tidak perlu build source code.
 
-Alur:
-`Docker Desktop → docker compose pull → docker compose up -d → inisialisasi Laravel → migration → akun admin`.
+## Alur
+
+```text
+Persiapan PC
+→ Environment
+→ Pull image dan Compose
+→ Inisialisasi Laravel
+→ Verifikasi
+→ Operasional dan update
+```
 
 - [Persiapan PC](persiapan/)
 - [Environment](environment/)
@@ -16,3 +24,5 @@ Alur:
 - [Inisialisasi](inisialisasi/)
 - [Verifikasi](verifikasi/)
 - [Operasional dan update](operasional/)
+
+> **Catatan versi:** untuk production yang membutuhkan reproducibility, lebih aman menggunakan image release yang memiliki tag versi daripada selalu menggunakan `latest`.
