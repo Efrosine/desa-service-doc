@@ -7,6 +7,8 @@ weight: 27
 
 Menu **Master Surat → Jenis Surat** digunakan untuk mendefinisikan surat yang dapat dibuat oleh operator.
 
+{{< image src="images/operasional/letter-type-list.png" >}}
+
 Jenis surat menentukan identitas dan aturan dasar surat. Template yang digunakan untuk menghasilkan dokumen dikelola sebagai bagian dari jenis surat.
 
 Secara konseptual:
@@ -51,6 +53,10 @@ Jenis surat digunakan untuk:
 > - ✓ = field dapat bernilai `NULL`.
 > - ✗ = field tidak dapat bernilai `NULL`.
 > - S = field dikelola oleh system dan diisi secara otomatis.
+
+Form tambah atau ubah jenis surat:
+
+{{< image src="images/operasional/letter-type-form.png" >}}
 
 ## Konfigurasi Resident
 
@@ -114,6 +120,10 @@ Status ini berbeda dengan status template:
 - **Template aktif** menentukan template yang digunakan untuk menghasilkan dokumen.
 
 Sebuah jenis surat dapat tetap ada tanpa template aktif, misalnya setelah seluruh template dihapus.
+
+Detail jenis surat:
+
+{{< image src="images/operasional/letter-type-view.png" >}}
 
 ## Hubungan dengan Permintaan Surat
 

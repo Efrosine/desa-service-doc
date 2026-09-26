@@ -7,9 +7,15 @@ weight: 23
 
 Menu **Data Penduduk → Semua Warga** mengelola resident.
 
+{{< image src="images/operasional/resident-list.png" >}}
+
 Resident terhubung ke family dan menjadi sumber data otomatis surat.
 
 Saat membuat request, sistem memvalidasi jumlah resident, keunikan resident, dan ketersediaan resident.
+
+Form tambah atau ubah warga:
+
+{{< image src="images/operasional/resident-form.png" >}}
 
 ## Struktur Data
 
@@ -34,3 +40,7 @@ Saat membuat request, sistem memvalidasi jumlah resident, keunikan resident, dan
 > - ✓ = field dapat bernilai `NULL`.
 > - ✗ = field tidak dapat bernilai `NULL`.
 > - S = field dikelola oleh system dan diisi secara otomatis.
+
+Detail warga:
+
+{{< image src="images/operasional/resident-view.png" >}}
