@@ -7,13 +7,13 @@ weight: 26
 
 Menu **Pengguna** mengelola akun yang dapat mengakses panel administrasi aplikasi.
 
-{{< image src="user-list.png" >}}
+{{< image src="images/operasional/user-list.png" >}}
 
 Pengguna memiliki nama, email, dan password. Password disimpan dalam bentuk hash dan tidak ditampilkan sebagai data biasa.
 
 Form tambah atau ubah pengguna:
 
-{{< image src="user-form.png" >}}
+{{< image src="images/operasional/user-form.png" >}}
 
 ## Struktur Data
 
@@ -35,4 +35,4 @@ Form tambah atau ubah pengguna:
 
 Detail pengguna:
 
-{{< image src="user-view.png" >}}
+{{< image src="images/operasional/user-view.png" >}}

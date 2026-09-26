@@ -9,7 +9,7 @@ Template Surat menentukan **bagaimana dokumen untuk suatu jenis surat dibuat**.
 
 Template dikelola dari halaman **Jenis Surat** melalui relasi **Template Surat**. Satu jenis surat dapat memiliki beberapa template untuk mendukung versioning tanpa mengubah definisi jenis surat.
 
-{{< image src="letter-template-list.png" >}}
+{{< image src="images/operasional/letter-template-list.png" >}}
 
 Secara konseptual:
 
@@ -105,7 +105,7 @@ Detail placeholder dijelaskan pada [Panduan Template DOCX](../template-docx/).
 
 `form_schema` mendefinisikan field tambahan yang ditampilkan kepada operator ketika membuat atau mengedit permintaan surat.
 
-{{< image src="letter-template-form.png" >}}
+{{< image src="images/operasional/letter-template-form.png" >}}
 
 Contoh:
 

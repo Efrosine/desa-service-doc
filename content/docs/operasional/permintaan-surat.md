@@ -7,7 +7,7 @@ weight: 29
 
 Menu **Permohonan Surat** menyimpan permintaan pembuatan surat berdasarkan jenis surat dan template yang aktif.
 
-{{< image src="letter-request-list.png" >}}
+{{< image src="images/operasional/letter-request-list.png" >}}
 
 Saat membuat permintaan, sistem:
 
@@ -21,7 +21,7 @@ Saat membuat permintaan, sistem:
 
 Form permintaan surat:
 
-{{< image src="letter-request-form.png" >}}
+{{< image src="images/operasional/letter-request-form.png" >}}
 
 Saat mengedit permintaan, sistem kembali memvalidasi resident dan template, menyaring `form_data` berdasarkan `form_schema`, memperbarui snapshot, lalu menghasilkan ulang dokumen.
 
@@ -129,4 +129,4 @@ Saat edit, sistem mengambil nama field dari `form_schema` dan hanya mempertahank
 
 Detail permintaan surat:
 
-{{< image src="letter-request-view.png" >}}
+{{< image src="images/operasional/letter-request-view.png" >}}

@@ -7,7 +7,7 @@ weight: 23
 
 Menu **Data Penduduk → Semua Warga** mengelola resident.
 
-{{< image src="resident-list.png" >}}
+{{< image src="images/operasional/resident-list.png" >}}
 
 Resident terhubung ke family dan menjadi sumber data otomatis surat.
 
@@ -15,7 +15,7 @@ Saat membuat request, sistem memvalidasi jumlah resident, keunikan resident, dan
 
 Form tambah atau ubah warga:
 
-{{< image src="resident-form.png" >}}
+{{< image src="images/operasional/resident-form.png" >}}
 
 ## Struktur Data
 
@@ -43,4 +43,4 @@ Form tambah atau ubah warga:
 
 Detail warga:
 
-{{< image src="resident-view.png" >}}
+{{< image src="images/operasional/resident-view.png" >}}
