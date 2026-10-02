@@ -7,6 +7,8 @@ weight: 25
 
 Menu **Institusi** digunakan untuk mengelola data institusi yang dapat menjadi sumber data saat membuat surat.
 
+{{< image src="images/operasional/institution-list.png" >}}
+
 Data institusi yang tersimpan dapat digunakan oleh jenis surat yang membutuhkan data source `institution`.
 
 ## Struktur Data
@@ -25,3 +27,13 @@ Data institusi yang tersimpan dapat digunakan oleh jenis surat yang membutuhkan 
 > - ✓ = field dapat bernilai `NULL`.
 > - ✗ = field tidak dapat bernilai `NULL`.
 > - S = field dikelola oleh system dan diisi secara otomatis.
+
+Form institusi:
+
+{{< image src="images/operasional/institution-form.png" >}}
+
+Institusi hanya dapat dibuat jika belum ada data institusi. Setelah satu institusi tersimpan, data tersebut dikelola sebagai satu-satunya institusi.
+
+Detail institusi:
+
+{{< image src="images/operasional/institution-view.png" >}}

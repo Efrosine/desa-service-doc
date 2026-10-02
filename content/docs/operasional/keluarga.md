@@ -7,9 +7,15 @@ weight: 22
 
 Menu Keluarga mengelola unit family.
 
+{{< image src="images/operasional/family-list.png" >}}
+
 Informasi utama: Nomor KK, Kepala Keluarga, Jumlah Anggota, Alamat, RT, RW, Dusun, Desa/Kelurahan, Kecamatan, Kabupaten/Kota, Provinsi, Kode Pos.
 
-Nomor KK dipakai sebagai identitas keluarga dalam proses surat. Jumlah anggota berasal dari resident yang terhubung.
+Nomor KK dipakai sebagai identitas keluarga dalam proses surat. Jumlah anggota berasal dari resident yang terhubung. Form tambah atau ubah keluarga:
+
+{{< image src="images/operasional/family-form.png" >}}
+
+{{< image src="images/operasional/family-residents.png" >}}
 
 ## Struktur Data
 
@@ -34,3 +40,7 @@ Nomor KK dipakai sebagai identitas keluarga dalam proses surat. Jumlah anggota b
 > - ✓ = field dapat bernilai `NULL`.
 > - ✗ = field tidak dapat bernilai `NULL`.
 > - S = field dikelola oleh system dan diisi secara otomatis.
+
+Detail keluarga dan anggota warga:
+
+{{< image src="images/operasional/family-view.png" >}}
